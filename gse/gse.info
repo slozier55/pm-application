@@ -1,0 +1,36 @@
+; Drupal's .info files allow themers to easily specify some of the static
+
+; The name, description and screenshot used for this theme on the Appearance
+; page at admin/appearance.
+
+screenshot  = screenshot.png
+name        = WWW
+description = WWW 2014
+core        = 7.x
+
+
+
+; Then we add our own stylesheet.
+stylesheets[all][] = css/styles.css
+
+
+; Optionally add some JavaScripts to your theme.
+
+scripts[] = js/global.js
+;scripts[] = js/waypoints-sticky.js
+;scripts[] = js/waypoints.js
+
+
+regions[header]         = Header
+regions[navigation]     = Navigation bar
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
+
+
+
+
