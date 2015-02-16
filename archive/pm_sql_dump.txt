@@ -1,0 +1,302 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.4
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1:33066
+-- Generation Time: Jul 01, 2010 at 11:31 AM
+-- Server version: 5.1.41
+-- PHP Version: 5.2.13
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `pm`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `day_works`
+--
+
+CREATE TABLE IF NOT EXISTS `day_works` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `day` date DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `project_id` int(11) NOT NULL,
+  `basecamp_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=230 ;
+
+--
+-- Dumping data for table `day_works`
+--
+
+INSERT INTO `day_works` (`id`, `user_id`, `title`, `description`, `day`, `created_at`, `updated_at`, `project_id`, `basecamp_id`) VALUES
+(1, 1, 'new insert', 'none', '2010-06-30', NULL, NULL, 0, '141'),
+(2, 1, 'Another item  oiuoiquwoiq', 'uwo', '2010-06-30', '2010-06-10 12:57:00', '2010-06-10 12:57:00', 141, NULL),
+(3, 1, 'more', '', '2010-06-09', '2010-06-10 12:58:24', '2010-06-10 12:58:24', 2, NULL),
+(7, 1, 'old', '', '2010-06-10', '2010-06-11 12:09:36', '2010-06-11 12:09:36', 0, ''),
+(8, 1, 'foo bar space test lalala', '', '2010-06-14', '2010-06-14 23:54:32', '2010-06-15 21:43:00', 0, ''),
+(9, 1, 'another change', '', '2010-06-15', '2010-06-14 23:54:42', '2010-06-15 00:10:53', 0, ''),
+(10, 1, 'something else to do', '', '2010-06-16', '2010-06-14 23:54:58', '2010-06-14 23:54:58', 0, ''),
+(11, 1, 'almost done', '', '2010-06-17', '2010-06-14 23:55:13', '2010-06-20 12:15:13', 0, ''),
+(12, 1, 'friday stuff', '', '2010-06-18', '2010-06-14 23:55:41', '2010-06-14 23:55:41', 0, ''),
+(19, 4, 'friday stuff', '', '2010-06-21', '2010-06-15 22:23:12', '2010-06-15 22:23:12', 0, ''),
+(22, 2, 'test delete ag', '', '2010-06-20', '2010-06-20 12:11:17', '2010-06-20 12:11:17', 141, ''),
+(23, 5, 'another change', '', '2010-06-23', '2010-06-20 12:11:45', '2010-06-20 12:11:45', 0, ''),
+(24, 4, 'day test2', '', '2010-06-22', '2010-06-20 12:14:52', '2010-06-20 12:15:24', 0, ''),
+(25, 4, 'foo', '', '2010-06-24', '2010-06-20 23:03:11', '2010-06-20 23:03:11', 0, ''),
+(27, 1, 'basecamp id', '', '2010-06-21', '2010-06-20 23:23:42', '2010-06-20 23:23:42', 0, '3389052'),
+(28, 7, 'Scott''s Cake', '', '2010-06-29', '2010-06-28 09:57:00', '2010-06-28 09:57:00', 141, NULL),
+(29, 1, 'sd,asb,m', 'cxvcxvcxvxc', '2010-06-28', NULL, NULL, 0, NULL),
+(30, 1, 'Test Fundraising', 'Description', '2010-06-29', NULL, NULL, 115, NULL),
+(213, 1, 'NEW Blog', NULL, '2010-07-01', NULL, NULL, 0, NULL),
+(214, 1, 'Not another project', NULL, '2010-07-01', NULL, NULL, 0, NULL),
+(215, 1, 'Not another project', NULL, '2010-07-01', NULL, NULL, 141, NULL),
+(216, 1, 'A note to self', NULL, '2010-06-30', NULL, NULL, 141, NULL),
+(218, 1, 'Please be pease', NULL, '2010-07-01', NULL, NULL, 141, NULL),
+(219, 1, 'TITTEL KJHKJ', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 141, NULL),
+(220, 2, 'Project 143', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 141, NULL),
+(221, 1, 'Whatcha Ma Call IT  - Do something', NULL, '0000-00-00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(222, 0, '', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(223, 2, '', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(224, 0, 'so sos ', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(225, 2, 'asAS', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(226, 2, 'asAS', NULL, '2010-07-01', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, NULL),
+(227, 1, 'New with Project ID ', NULL, '2010-07-02', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 101, NULL),
+(228, 1, 'New with Project ID ', NULL, '2010-07-02', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 101, NULL),
+(229, 1, 'New Dailey 7/2', NULL, '2010-07-02', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 101, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notes`
+--
+
+CREATE TABLE IF NOT EXISTS `notes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `detail` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `notes`
+--
+
+INSERT INTO `notes` (`id`, `detail`, `user_id`, `created_at`, `updated_at`) VALUES
+(10, 'la te da', 1, '2010-06-16 12:19:00', '2010-06-16 12:19:00'),
+(11, 'do something noteworthy blah blah blah lalalala llaa', 1, '2010-06-16 12:20:09', '2010-06-16 12:20:28'),
+(14, 'blah', 1, '2010-06-16 12:25:43', '2010-06-16 12:25:46'),
+(15, 'Scott''s New Notes', 2, '2010-06-28 10:19:00', '2010-06-28 10:19:00'),
+(16, 'note man', 1, NULL, NULL),
+(17, 'qweqweqweqwe qeqweqw e', 0, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `projects`
+--
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `basecamp_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=151 ;
+
+--
+-- Dumping data for table `projects`
+--
+
+INSERT INTO `projects` (`id`, `name`, `basecamp_id`, `created_at`, `updated_at`) VALUES
+(101, 'DER004 - DerÃ©on Web', 1133258, '2010-06-20 23:36:43', '2010-06-20 23:36:43'),
+(102, 'GHP005 - Mission & Values Update', 1133321, '2010-06-20 23:36:43', '2010-06-20 23:36:43'),
+(103, 'MAR015 - Hourly', 1407739, '2010-06-20 23:36:43', '2010-06-20 23:36:43'),
+(104, 'H&G Interns', 1961527, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(105, 'designhappyfuntime', 1977637, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(106, 'MAC002 - Instructor Site Phase 1', 2447904, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(107, 'H&G Website', 2516749, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(108, 'HTML Email', 2516785, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(109, 'BUT002 - Web Site Redesign', 2597208, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(110, 'PEA008 - MultiMedia Library', 2984767, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(111, 'Biz Development ', 3389052, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(112, 'IT/Network/Internal', 3398198, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(113, 'TUF007 - Social Media Microsite', 3712820, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(114, 'Operation Collaboration ', 3862793, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(115, 'HBS009 - Fundraising Initiative', 3902545, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(116, 'CAM002 - Cambium VPMS', 3992091, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(117, 'TUF009 - Banner Ad Campaign', 4052966, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(118, 'TUF010 - Tufts Gateway Redesign', 4065657, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(119, 'ESQ005', 4171949, '2010-06-20 23:36:00', '2010-06-20 23:36:00'),
+(120, 'H&G Gift 2010', 4223425, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(121, 'MAC001 - D2S eCommerce Site', 4226645, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(122, 'TUF011 & 016 - Online Enrollment Design', 4332239, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(123, 'TUF013 - Medi Banner Ads', 4332617, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(124, 'SCH005 - Deep Dive Portal', 4434156, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(125, 'SCH006 - Scholastic U', 4469912, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(126, 'H&G Workflow', 4590461, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(127, 'EGC001 - Corporate Site', 4625095, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(128, 'EGC002 - Videos', 4679673, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(129, 'SCH007 -  Teacher Dashboard', 4681405, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(130, 'HBS011 - HBS New Grads Campaign', 4749406, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(131, 'TUF015 - Medicare Google Shopping', 4761253, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(132, 'SCH008 - Motivation System', 4806770, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(133, 'MOC001 - Homepage Branding', 4814914, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(134, 'SCH009 - Daily Planner', 4836359, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(135, 'NBV001 - Web Redesign', 4889339, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(136, 'New Business - Tufts Medicare MEMBERS Site', 4891041, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(137, 'HNG001 - WWNorton New Biz', 4927892, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(138, 'PEA017 - MediaShare Upgrade', 4940085, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(139, 'HNG003 - Tufts CVS Project', 4955080, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(140, 'TUF017 - Tufts MED Preferred Redesign', 5001225, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(141, 'TUF018 - Tufts MED Persona Tools', 5003442, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(142, 'TUF019 - Tufts MED Website Writing', 5003450, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(143, 'New Business', 5004696, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(144, 'HNG002 - Feed Resource Recovery', 5011629, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(145, 'TUF020 - Tufts Carelink Transition Tool Module', 5011744, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(146, 'ELE902- Element Maintenance', 5016717, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(147, 'TUF901 - Tufts (KYH) Maintenance', 5031645, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(148, 'IRR005 Icarus Teaser', 5047317, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(149, 'BBN014 - Avoke', 5049571, '2010-06-20 23:36:44', '2010-06-20 23:36:44'),
+(150, 'New Project', NULL, '2010-06-25 13:24:00', '2010-06-25 13:24:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `schema_migrations`
+--
+
+CREATE TABLE IF NOT EXISTS `schema_migrations` (
+  `version` varchar(255) CHARACTER SET latin1 NOT NULL,
+  UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `schema_migrations`
+--
+
+INSERT INTO `schema_migrations` (`version`) VALUES
+('20100318150505'),
+('20100608003658'),
+('20100608010444'),
+('20100608012056'),
+('20100608125019'),
+('20100610172244'),
+('20100610173241'),
+('20100610185117'),
+('20100611105421'),
+('20100616013823'),
+('20100620161017'),
+('20100620231231');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teams`
+--
+
+CREATE TABLE IF NOT EXISTS `teams` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `teams`
+--
+
+INSERT INTO `teams` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Development', '2010-06-10 17:29:00', '2010-06-10 17:29:00'),
+(2, 'Design', '2010-06-10 17:29:44', '2010-06-10 17:29:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `crypted_password` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `password_salt` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `persistence_token` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `login_count` int(11) DEFAULT NULL,
+  `last_login_ip` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `last_login_at` datetime DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `team_id` int(11) DEFAULT NULL,
+  `manager` tinyint(1) DEFAULT '0',
+  `username` varchar(50) NOT NULL,
+  `password` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `crypted_password`, `password_salt`, `persistence_token`, `login_count`, `last_login_ip`, `last_login_at`, `created_at`, `updated_at`, `name`, `team_id`, `manager`, `username`, `password`) VALUES
+(1, 'sl', 'gkjhkjhjk', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Scott Lozier', 1, 1, '', 'sl'),
+(2, 'tl', 'a50f4016bcf95750749f5b2859fdea469b552dabea58930f65caf72280863d9320ac705e003c4ac470ed999a026bc602d3edf8c10d7fc00471ab6cdb7cbff5f4', 'bL74jjYHdauBXlOD0jVd', '3a912fbdbd0d78d517e6264c0dd977e1db9ac4a39031d5fb613c5ef11b086e48a4deb96af0a41d126ed2485332a8f6dcb09c32ac115346fee9a42a3fcd045509', 1, NULL, NULL, '2010-06-10 13:14:15', '2010-06-10 17:40:07', 'Test User', 2, 0, '', 'tl'),
+(4, 'nosess@foo.com', 'bccb4dc29764e5ce40b11ed54aa18b1b3324b004795f910e404ce3d91f403669e4ed33f7745f5bb1d89db5896413e7e9012ddd83058c93f7b2a44e2ceba5c021', 'Co-4YbWqZTVmAGO3pf-j', 'ddb9685c20892e8a9c58ddccd37d36f3f0e9b008332a74e1652becd9026c519ed4db3b530d257a032d3020fcc2545371cfa9ddc7a11aa46be08948ecb435f175', NULL, NULL, NULL, '2010-06-10 13:41:05', '2010-06-10 17:40:16', 'no sess', 1, 0, '', ''),
+(5, 'newww@foo.com', 'c351ae3d2f30e2698ec00cc524af52dda2e622e49756aa731293d365dd8ba90151c44c33b859ae1b81404e18739a4913800a1302ed54d1b4819ddce05bc6727d', 'tatEilW-nuIkKTZMv56Q', 'f63ea25716e39643f41ece3798e4b1159a70d099bd765803644ae89d249023e02f388dbc942a14496ff66e621fc9c29072dc397dee4b765efa19ac65b95eef12', NULL, NULL, NULL, '2010-06-10 18:03:08', '2010-06-10 18:03:08', 'Somebody New', 1, 0, '', ''),
+(6, 'asdff@asdfs.com', 'b0f022c2bbb82b1ea38e31962a7fec5bb0d8de7959330af53b05e51d67b57e78c1a11fcda956e72f697e7c2dc5a9f554452e9c1ef30eae04c53426699ab2795a', 'SBzIY9eJdK9iiqVuIJnT', '998952bd283b737150f6c443ee04fa689e303a4d1f67b85ee5656ba465f2d6cdd9963e6578655a26abd7fcad30324cfac398986064dcdc7ece99d91708bd9466', NULL, NULL, NULL, '2010-06-10 18:04:27', '2010-06-10 18:04:27', 'aksjdfh', 2, 0, '', ''),
+(7, 'guest@huntandgather.com', '1bf903cab0563b0e1ecd5380819b327b12e6855c865b514fe32c93e81b12a656f6357e538756c23139e1cea8a73a5c456789ade7194418cf657229d62a591431', 'LapqohaCwTOL3XEZ8oRM', '6d9b5058c0ebd150813fa9bc11d5066a9e081935e80628c9fb901921f72e619077612c1433a3b5d5f281d0cd49c5ccfb53845019d76b144fec19458035d7088f', 1, NULL, NULL, '2010-06-21 16:59:10', '2010-06-21 16:59:48', 'Guest', NULL, 0, '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whenever_works`
+--
+
+CREATE TABLE IF NOT EXISTS `whenever_works` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `DONE` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+
+--
+-- Dumping data for table `whenever_works`
+--
+
+INSERT INTO `whenever_works` (`id`, `title`, `description`, `created_at`, `updated_at`, `user_id`, `DONE`) VALUES
+(1, 'A when ever project', '', '2010-06-08 13:07:20', '2010-06-20 12:16:09', 1, 'NO'),
+(4, 'test whenever2', '', '2010-06-10 20:09:55', '2010-06-20 12:15:55', 4, ''),
+(7, 'when', '', '2010-06-20 12:15:37', '2010-06-20 12:15:37', 4, ''),
+(8, 'test again', 'whatever foo', '2010-06-28 09:23:00', '2010-06-28 09:23:00', 2, ''),
+(9, 'TITle', 'description', '2010-06-28 10:05:00', '2010-06-28 10:05:00', 2, ''),
+(13, 'do', 'd', NULL, NULL, 1, 'NO'),
+(14, '', '', NULL, NULL, 1, ''),
+(15, '', '', NULL, NULL, 1, ''),
+(16, 'asdsakdjsg', 'kjhkjhh', NULL, NULL, 2, 'NO'),
+(17, 'asdsakdjsg', 'kjhkjhh', NULL, NULL, 2, 'NO'),
+(18, '', '', NULL, NULL, 2, 'NO'),
+(19, '', '', NULL, NULL, 2, 'NO'),
+(20, '', '', NULL, NULL, 2, 'NO'),
+(21, '', '', NULL, NULL, 2, 'NO'),
+(22, '', '', NULL, NULL, 2, 'NO'),
+(23, 'dwqewqe', 'qweqwe', NULL, NULL, 2, 'NO'),
+(24, 'REALLY IMPORTANT work', 'vvvv', NULL, NULL, 1, 'NO'),
+(25, 'REALLY IMPORTANT work', 'vvvv', NULL, NULL, 1, 'NO'),
+(26, 'REALLY IMPORTANT work', 'vvvv', NULL, NULL, 1, 'NO'),
+(27, 'REALLY IMPORTANT work', 'vvvv', NULL, NULL, 1, 'NO');

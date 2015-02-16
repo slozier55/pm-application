@@ -1,0 +1,16 @@
+body { font-size: 70%; }
+
+.btn span.arrow, .btn2 span.arrow, .btn3 span.arrow { vertical-align: middle; }
+
+button.btn span.text { overflow: visible; }
+button.btn span.left, button.btn span.right { display: none; }
+
+#siteSearch button { height: 39px; }
+
+.tips #tipList li { height: 110px; }
+.tips #tipList li.on div.foot { position: static; }
+.tips #tipList li div.nav { position: absolute; top: auto; bottom: 8px; right: 12px; }
+
+#shareTip2 dd div.connect div { width: 150px; }
+
+a.comment-count { height: 1.2em; overflow: hidden; }

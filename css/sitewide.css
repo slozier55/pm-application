@@ -1,0 +1,63 @@
+
+/* Reset Browser Defaults */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {	margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+ol, ul { list-style: none; }
+table { border-spacing: 10; border-collapse: collapse; }
+caption, th, td { text-align: left; font-weight: normal; padding:5px; }
+
+/* Style Guide */
+
+body { margin: 25px; background: #333 url('../img/bg.jpg') repeat fixed top left; color: #333; font: normal 72% Helvetica, Arial, sans-serif; line-height: 1.4em; }
+
+a, a:link, a:visited { color: #b5121b; font-weight: bold; text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+.content p, .content ul, .content ol { margin: 0 0 1em 0; }
+
+body .content p, body #articleMain.coupons ul li p { font-size: 12px; line-height: 17px; }
+body.larger .content p, body.larger #articleMain.coupons ul li p { font-size: 14px; line-height: 19px; }
+body.largest .content p, body.largest #articleMain.coupons ul li p { font-size: 18px; line-height: 22px; }
+
+h1 { font-size: 14pt; font-weight: bold; line-height: 2em; }
+h2 { font-size: 12pt; font-weight: bold; line-height: 2em; }
+h3, h4, h5 { font-weight: bold; line-height: 1.2em; }
+h6 { font-size: 28pt; font-weight: bold; line-height: 1em; padding:5px}
+
+button { cursor: pointer; padding: 0; margin: 0; border: none; background: none; }
+
+#time {position:absolute; top:145px; width: 775px; min-height: 500px; margin: 0 auto; padding: 15px 25px; background: #fff; 
+	border-radius: 6px; }
+
+
+#note { position:absolute; top:0px; left:850px;  padding: 15px 25px; background: #fff; border-radius: 6px; }
+
+
+#iphone { position:absolute; top:0px; left:10px; background: #fff; border-radius: 6px; width:480px}
+
+#siteHead { position: relative; margin-bottom: 25px;  }
+
+a#logLink { position: absolute; top: 0; right: 0; }
+
+#mainNav { padding: 10px 0 10px 70px; background: url('../img/flame.png') no-repeat top left; }
+
+#mainNav dt { font: bold 20px Georgia, serif; }
+
+#mainNav dd ul li { float: left; padding: .5em 1em 0 0; list-style: none; font: bold 16px Georgia, serif; }
+
+#addNew { position: absolute; right: 0; bottom: 10px;  }
+#addNew * { display: inline-block; }
+#addNew dt { padding-left: .4em;  }
+
+/* CLEARFIX GOES LAST ALWAYS */
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/ 
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

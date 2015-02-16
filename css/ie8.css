@@ -1,0 +1,15 @@
+button.btn span.text, button.btn2 span.text, button.btn3 span.text { padding-right: 10px; }
+button.btn span.right, button.btn2 span.right, button.btn3 span.right { right: 0; }
+
+h2.category { font-weight: bold; }
+
+.next span.arrow, .prev span.arrow { font-size: 9px; }
+
+#tuftsHP p { font-size: .9em; }
+
+#articleMain .article-foot li a.tool { background-position: 0 5px; }
+#articleMain .article-foot li a.tool:hover { background-position: 0 -16px; }
+
+.modal span.modal-top { background-image: url('../img/modal-top.gif'); }
+.modal span.modal-bottom { background-image: url('../img/modal-bottom.gif'); }
+div.modal-wrap { background-image: url('../img/modal-middle.gif'); }

@@ -1,0 +1,23 @@
+.content div, .content ul, .content p, .content li { height: 1%; }
+
+body { font-size: 70%; }
+
+#arms .callout, #arms .list, #arms .box1, #arms .box2, #arms .filter { height: 1%; }
+
+#content { position: relative; }
+#content.profile-view #trunk { float: none; width: 659px; }
+#content.profile-view #arms {  position: absolute; top: 0; right: 0; margin-left: 0; width: 260px; }
+.fancy #content.profile-view #trunk, 
+.fancy #content.profile-view #arms { top: 268px; }
+
+.tips .content .sort { width: 16em; overflow: hidden; }
+.tips #tipList li { overflow: hidden; }
+.tips #tipList li div.foot { padding: 0 12px }
+.tips #tipList li div.nav { bottom: 0px; }
+
+#calendarList { position: relative; width: auto; }
+#calendarList dl.sort { position: absolute; top: 0; left: 425px; float: none; margin: 0; }
+
+#modals { background: none; }
+div.modal { background-color: #666; }
+
